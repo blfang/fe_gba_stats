@@ -100,7 +100,7 @@ The 10th-90th percentile range represents the "common" range of outcomes one wou
 outcomes outside of the range can be interpreted as very lucky (top 10% of outcomes) or very unlucky (worst 10% of outcomes).
 
 Most other websites only use a simplified \`(level-ups) * (growth rate)\` calculation to estimate the mean stat increase.
-This is slightly inaccurate due (a) not accounting for rerolls when a level-up produces no stat increases,
+This is slightly inaccurate due to (a) not accounting for rerolls when a level-up produces no stat increases,
 (b) applying stat caps after averaging the stat increases, rather than before, so the simplified calculation is not really an average,
 especially when stat caps matter.
 
