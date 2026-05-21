@@ -1,0 +1,454 @@
+:root {
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
+    --slate-600: #475569;
+    --slate-900: #1e293b;
+    --blue-600: #2563eb;
+    --amber-600: #d97706;
+    --red-500: #ef4444;
+    --emerald-500: #10b981;
+}
+
+body {
+    margin: 0;
+    background-color: #fcfcfd;
+}
+
+.app-container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: var(--slate-900);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.title-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    text-align: center;
+}
+
+.title-link:hover {
+    opacity: 0.8;
+}
+
+.title {
+    text-align: center;
+    margin: 0 0 8px 0;
+    font-weight: 800;
+    font-size: 2.25rem;
+    letter-spacing: -0.025em;
+}
+
+.intro {
+    text-align: left;
+    color: var(--slate-600);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.examples-section {
+    background: white;
+    border: 1px solid var(--slate-200);
+    border-radius: 12px;
+    padding: 16px 20px;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.faq-section,
+.share-section {
+    background: white;
+    border: 1px solid var(--slate-200);
+    border-radius: 12px;
+    padding: 16px 20px;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.examples-label,
+.faq-heading {
+    margin: 0 0 8px 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--slate-400);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.share-label {
+    margin: 0 0 10px 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--slate-400);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.examples-list {
+    list-style: disc;
+    margin: 0;
+    padding: 0 0 0 18px;
+}
+
+.examples-item {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 6px;
+    color: var(--slate-600);
+}
+
+.examples-item:last-child {
+    margin-bottom: 0;
+}
+
+.examples-link {
+    color: var(--blue-600);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.examples-link:hover {
+    text-decoration: underline;
+}
+
+.examples-desc {
+    color: var(--slate-600);
+}
+
+
+.control-panel {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid var(--slate-200);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+    flex: 1;
+    height: fit-content;
+}
+
+.control-group {
+    margin-bottom: 20px;
+}
+
+.control-label {
+    display: block;
+    font-weight: bold;
+    font-size: 11px;
+    color: var(--slate-400);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+}
+
+.toggle-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--slate-600);
+}
+
+.level-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.range-input {
+    width: 100%;
+    accent-color: var(--blue-600);
+    cursor: pointer;
+}
+
+
+.plot-section {
+    width: 100%;
+    padding: 24px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.chart-wrapper {
+    width: 100%;
+    max-width: 500px;
+    min-height: 400px;
+    margin: 0 auto;
+}
+
+.chart-controls-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 800px;
+    margin: 32px auto 0 auto;
+    padding-top: 24px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.chart-controls {
+    padding: 16px;
+    background-color: var(--slate-50);
+    border: 1px solid var(--slate-200);
+    border-radius: 12px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--slate-600);
+    cursor: pointer;
+}
+
+.checkbox-label input {
+    margin-right: 8px;
+}
+
+
+.stat-card-container {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid var(--slate-200);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    flex: 1;
+    min-width: 300px;
+    height: fit-content;
+}
+
+.stat-name {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--slate-900);
+}
+
+.stat-subtitle {
+    font-size: 0.875rem;
+    color: var(--slate-400);
+    margin: 4px 0 20px 0;
+}
+
+.stat-table-header,
+.stat-table-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+}
+
+.stat-table-header {
+    border-bottom: 2px solid var(--slate-100);
+}
+
+.header-label {
+    font-weight: bold;
+    font-size: 0.65rem;
+    color: var(--slate-400);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    flex: 1.2;
+}
+
+.header-label--right {
+    text-align: right;
+    flex: 1.5;
+    cursor: help;
+    text-decoration: underline dotted;
+    text-underline-offset: 3px;
+}
+
+.header-sub {
+    font-weight: normal;
+    font-size: 0.6rem;
+    color: var(--slate-400);
+}
+
+.stat-table-row {
+    border-bottom: 1px solid var(--slate-50);
+}
+
+.stat-table-row:last-child {
+    border-bottom: none;
+}
+
+.col-label {
+    flex: 1.2;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.val-cursed {
+    color: var(--red-500);
+}
+
+.val-blessed {
+    color: var(--emerald-500);
+}
+
+.val-median {
+    font-weight: 700;
+}
+
+.val-sep {
+    color: var(--slate-300);
+}
+
+.col-range-value {
+    flex: 1.5;
+    text-align: right;
+    font-size: 0.9rem;
+    color: var(--slate-600);
+}
+
+.val-growth {
+    font-weight: normal;
+    font-size: 0.75rem;
+    color: var(--slate-400);
+}
+
+
+.faq-item {
+    border-top: 1px solid var(--slate-100);
+    padding: 4px 0;
+}
+
+.faq-item:first-of-type {
+    border-top: none;
+}
+
+.faq-question {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--slate-900);
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.faq-question:hover {
+    color: var(--blue-600);
+}
+
+.faq-answer {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--slate-600);
+    margin: 0 0 8px 0;
+    padding: 0 0 0 4px;
+}
+
+.share-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.share-input {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+    font-family: monospace;
+    border: 1px solid var(--slate-200);
+    border-radius: 8px;
+    background: var(--slate-50);
+    color: var(--slate-600);
+    outline: none;
+    cursor: text;
+}
+
+.share-input:focus {
+    border-color: var(--blue-600);
+}
+
+.share-copy-btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid var(--blue-600);
+    border-radius: 8px;
+    background: var(--blue-600);
+    color: white;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s ease;
+}
+
+.share-copy-btn:hover {
+    background: #1d4ed8;
+}
+
+.share-copy-btn:active {
+    background: #1e40af;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .app-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .chart-wrapper {
+        height: 350px;
+        min-height: unset;
+        max-width: none;
+    }
+}
+
+
+
+.notice-banner {
+    background: #fef3c7;
+    border: 1px solid #f59e0b;
+    color: #92400e;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    animation: noticeFadeIn 0.3s ease;
+    max-width: 680px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@keyframes noticeFadeIn {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.controls-row,
+.stats-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+    justify-content: center;
+}
+
+.controls-row > *,
+.stats-row > * {
+    flex: 1;
+    min-width: 280px;
+    max-width: 300px;
+}
+
