@@ -11,3 +11,7 @@ Compute and compare stat distributions for any two characters from the Game Boy 
 - For each stat, see the median as well as the 10th and 90th percentiles to understand variance due to RNG.
 - Share specific comparisons via URL
 - FAQ section explaining growth calculation methodology
+
+## Calculation details
+
+Web scraping from Serenes Forest and other sources was done in `notebooks/fe_parser.ipynb` and saved in `public/final_flat.csv`. PMF convolution calculations to compute the final stat distributions can be found in `src/utils/statMath.js`.
