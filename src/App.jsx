@@ -142,8 +142,11 @@ export default function App() {
         </ul>
       </section>
 
-      {/* Row 1: Controls side-by-side */}
-      <section className="controls-row">
+      {/* Character selection */}
+      <section className="character-selection-section">
+        <div className="section-divider"></div>
+        <p className="section-label">Character selection</p>
+        <div className="controls-row">
         <UnitControls
           data={data}
           characterOptions={characterOptions}
@@ -160,10 +163,14 @@ export default function App() {
           state={u2}
           setState={setU2}
         />
+        </div>
       </section>
 
-      {/* Row 2: Stat cards side-by-side */}
-      <section className="stats-row">
+      {/* Stats */}
+      <section className="stats-section">
+        <div className="section-divider"></div>
+        <p className="section-label">Stats</p>
+        <div className="stats-row">
         <StatCard
           char={unit1Results.char}
           stats={unit1Results.stats}
@@ -180,6 +187,7 @@ export default function App() {
           useAdjustedGrowths={u2.useAdjustedGrowths}
           themeColor={color2}
         />
+        </div>
       </section>
 
       {/* 3. PLOT SECTION */}
