@@ -154,10 +154,91 @@ body {
     letter-spacing: 0.05em;
 }
 
+.toggle-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border: 1px solid var(--slate-200);
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.15s ease, border-color 0.15s ease;
+    margin-bottom: 10px;
+}
+
+.toggle-card:hover {
+    background: var(--slate-50);
+    border-color: var(--slate-300);
+}
+
+.toggle-card:active {
+    background: var(--slate-100);
+}
+
+.toggle-card input[type="checkbox"] {
+    display: none;
+}
+
+.toggle-switch {
+    position: relative;
+    width: 36px;
+    height: 20px;
+    flex-shrink: 0;
+    background: var(--slate-300);
+    border-radius: 10px;
+    transition: background 0.2s ease;
+}
+
+.toggle-switch::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 14px;
+    height: 14px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.toggle-card.active .toggle-switch {
+    background: var(--blue-600);
+}
+
+.toggle-card.active .toggle-switch::after {
+    transform: translateX(16px);
+}
+
 .toggle-text {
     font-size: 0.9rem;
     font-weight: 500;
     color: var(--slate-600);
+    line-height: 1.3;
+}
+
+.faq-link {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--slate-200);
+    color: var(--slate-600);
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-decoration: none;
+    flex-shrink: 0;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.faq-link:hover {
+    background: var(--blue-600);
+    color: white;
 }
 
 .level-header {

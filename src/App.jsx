@@ -83,6 +83,23 @@ export default function App() {
     window.history.replaceState(null, '', newUrl);
   }, [u1, u2, vis1, vis2]);
 
+  // Auto-open FAQ item when navigated via hash link
+  useEffect(() => {
+    if (data.length === 0) return;
+    const openFAQ = () => {
+      const hash = window.location.hash;
+      if (!hash) return;
+      const el = document.getElementById(hash.slice(1));
+      if (el && el.tagName === 'DETAILS') {
+        el.open = true;
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+    openFAQ();
+    window.addEventListener('hashchange', openFAQ);
+    return () => window.removeEventListener('hashchange', openFAQ);
+  }, [data.length]);
+
   const unit1Results = useMemo(() => calculateUnit(data, u1), [data, u1]);
   const unit2Results = useMemo(() => calculateUnit(data, u2), [data, u2]);
 
@@ -270,7 +287,7 @@ export default function App() {
       <section className="faq-section">
         <p className="faq-heading">FAQ</p>
         {FAQ_ITEMS.map((item, i) => (
-          <details key={i} className="faq-item">
+          <details key={i} id={item.id} className="faq-item">
             <summary className="faq-question">{item.q}</summary>
             <FAQAnswer segments={item.a} />
           </details>

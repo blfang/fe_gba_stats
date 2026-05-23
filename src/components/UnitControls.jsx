@@ -168,20 +168,36 @@ export default function UnitControls({
           className={`toggle-card ${isHardMode ? 'active' : ''}`}
           onClick={() => updateState({ isHardMode: !isHardMode })}
         >
-          <input type="checkbox" checked={isHardMode} readOnly />
+          <div className="toggle-switch" style={isHardMode ? { background: themeColor } : undefined} />
           <span className="toggle-text">Apply Hard Mode Bonuses</span>
+        <a
+          href="#faq-hard-mode"
+          className="faq-link"
+          onClick={(e) => e.stopPropagation()}
+          title="Learn more about hard mode bonuses in the FAQ"
+        >
+          ?
+        </a>
         </div>
       )}
       <div
         className={`toggle-card ${useAdjustedGrowths ? 'active' : ''}`}
         onClick={() => updateState({ useAdjustedGrowths: !useAdjustedGrowths })}
       >
-        <input type="checkbox" checked={useAdjustedGrowths} readOnly />
+        <div className="toggle-switch" style={useAdjustedGrowths ? { background: themeColor } : undefined} />
         <span className="toggle-text">Include reroll logic</span>
+        <a
+          href="#faq-reroll"
+          className="faq-link"
+          onClick={(e) => e.stopPropagation()}
+          title="Learn more about reroll logic in the FAQ"
+        >
+          ?
+        </a>
       </div>
 
       {tier2Options.length > 0 && (
-        <div className="control-group" style={{ borderTop: '1px solid #e2e8f0', paddingTop: '15px' }}>
+        <div className="control-group" style={{ paddingTop: '15px' }}>
           <label className="control-label">Promotion</label>
           <Select
             isSearchable={false}

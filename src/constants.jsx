@@ -70,6 +70,7 @@ export const EXAMPLES = [
 
 export const FAQ_ITEMS = [
   {
+    id: 'faq-reroll',
     q: 'What does "Include reroll logic" do?',
     a: `In the GBA games, if no stats increase during a level up,
 the game rerolls the level up. If again no stats increase, it rerolls once final time.
@@ -80,6 +81,7 @@ with a bigger impact for characters with very low [original] growth rates like N
 Sources: [Serenes Forest](https://forums.serenesforest.net/topic/91108-a-deep-dive-into-level-up-mechanics/), [fireemblem.fandom.com](https://fireemblem.fandom.com/wiki/Level#Leveling_Up_and_Stat_Growth).`,
   },
   {
+    id: 'faq-hard-mode',
     q: 'What are hard mode bonuses?',
     a: `In FE6 Hard Mode and FE7 Hector Hard Mode, recruitable enemies have boosted stats via bonus level-ups.
 In FE7, such characters get 5 bonus level-ups, while in FE6 they get between 4 and 14 bonus level-ups (the later the chapter, the bigger the bonus).
