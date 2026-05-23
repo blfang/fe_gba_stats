@@ -117,5 +117,5 @@ with some cross-referencing with Fire Emblem Averages [[FE6](https://fea.fewiki.
 Specifics about hard mode bonuses were based on info from [Triangle Attack](https://triangleattack.com).
 `,
   },
-  { q: 'Where is the code? Where can I report bugs and make feature requests?', a: 'See the [GitHub repository](https://github.com/blfang/fe_gba_stats/issues).' }
+  { q: 'Where is the code? Where can I report bugs and make feature requests?', a: 'See the [GitHub repository](https://github.com/blfang/fe_gba_stats/).' }
 ];
