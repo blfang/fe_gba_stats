@@ -111,7 +111,7 @@ export default function App() {
       <div className="intro">
         <p><strong>What is this?</strong> Compute and compare the stats of any two characters from the GBA Fire Emblem games.</p>
         <p><strong>How do I use this?</strong> Click the Example Comparisons for some quick examples, or choose characters and parameters in the menus below.</p>
-        <p><strong>Why is this useful?</strong> Plots make it easy to compare characters (or even variants of the same character) at a glance. 10th and 90th percentiles also give a sense of how the stat may vary based on RNG.</p>
+        <p><strong>Why is this useful?</strong> Plots make it easy to compare characters (or even variants of the same character) at a glance. 10th and 90th percentiles also show how much the stat may vary based on RNG, and quantifies how lucky (or unlucky) a character is in a particular run-through of the game.</p>
       </div>
 
       {/* Example Comparisons */}
