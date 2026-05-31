@@ -227,7 +227,7 @@ export default function App() {
             ]}
             layout={{
               polar: {
-                radialaxis: { range: [0, 60], visible: true },
+                radialaxis: { range: [0, 30], visible: true },
                 angularaxis: { rotation: 90, direction: 'clockwise' },
               },
               autosize: true,
